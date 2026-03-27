@@ -1,0 +1,32 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Моє місто</h1>
+    <nav>
+        <a href="/">Головна</a>
+        <a href="/history">Історія</a>
+        <a href="/places">Місця</a>
+        <a href="/gallery">Галерея</a>
+        <a href="/contact">Контакти</a>
+    </nav>
+</header>
+
+<main>
+    {{template "content" .}}
+</main>
+
+<footer>
+    <p>© 2025 Моє місто</p>
+</footer>
+
+</body>
+</html>
+{{end}}
